@@ -60,13 +60,13 @@ void delete_node(int value, struct node* current){
 	}
 }
 int main(){
-	struct node* first_node = insert_first_node(0);
-	insert_node(2,0,first_node);
-	insert_node(3,2,first_node);
+	struct node* first_node = insert_first_node(0);//create an linked array with first elementwhich is equel to 0
+	insert_node(2,0,first_node);//insert element 2 after element 0
+	insert_node(3,2,first_node);//insert element 3 after element 2
 	insert_node(1,0,first_node);//list is 0 1 2 3
 	delete_node(0,first_node);//1 2 3
 	delete_node(3,first_node);//1 2
 	delete_node(2,first_node);//1 
-	delete_node(1,first_node);//
+	delete_node(1,first_node);//no elements in an array
 	print_list(first_node);
 }
