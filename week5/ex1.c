@@ -9,7 +9,7 @@ printf("thread number %d with id %d is working\n", i, id);
 pthread_exit(NULL);
 return NULL;
 }
-// if there is no joins then firstly program create all threads and after that they all start working(creating thread number 1-5, then thread number 1-5 with id is working)
+// if there is no joins then firstly program create threads and after that they can start work even before creation of all threads is not finished. So order will be chaotic.
 //with joins it will be sequentially creating -> working -> exiting again and again
 int main(){
 int i, current;
