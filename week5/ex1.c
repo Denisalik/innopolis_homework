@@ -9,7 +9,8 @@ printf("thread number %d with id %d is working\n", i, id);
 pthread_exit(NULL);
 return NULL;
 }
-
+// if there is no joins then firstly program create all threads and after that they all start working(creating thread number 1-5, then thread number 1-5 with id is working)
+//with joins it will be sequentially creating -> working -> exiting again and again
 int main(){
 int i, current;
 for(i=0;i<N;i++){
