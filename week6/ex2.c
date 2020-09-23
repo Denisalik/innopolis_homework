@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <pthread.h>
-#include <time.h>
-//time_t start = time(NULL);
 struct process {
 int ind;
 double arr_time;
@@ -50,7 +47,7 @@ wt = tat-time[i].burst_time;
 sumtat+=tat;
 sumwt+=wt;
 printf("%d\t%f\t%f\t%f\n",time[i].ind,exit,tat,wt);
-}
+}//index is saved before sorting, so it is index of initially ordered data. 
 printf("avgTAT = %f\tavgWT = %f",sumtat/n,sumwt/n);
 
 return 0;
