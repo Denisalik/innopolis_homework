@@ -66,6 +66,7 @@ sumwt+=wt;
 printf("%d\t%f\t%f\t%f\n",time[i].ind,exit,tat,wt);
 }
 printf("avgTAT = %f\tavgWT = %f",sumtat/n,sumwt/n);
-
+//If we compare average of waiting time and average of TAT as second priority, results have shown that in 2 ex.(Shortest Job First) is best, then 1 ex.(First Come First Serve), on last place is 3 ex.(Round Robin).
+//But Round Robin do many processes at a period of time, therefore in practice Round Robin scheduling of interactive system will be best, While everything above is better for batch system.  
 return 0;
 }
