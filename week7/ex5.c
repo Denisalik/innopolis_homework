@@ -4,8 +4,8 @@ int main() {
 	char foo[] = "Hello World";
 	s = (char**)malloc(sizeof(char*));
 	*s = foo;
-	printf("s is %p\n",s);//pointer of s
+	printf("s is %s\n",*s);//pointed value of s
 	s[0] = foo;
-	printf("s[0] is %s\n",s[0]);//pointed value of s
+	printf("s[0] is %s\n",s[0]);//same as *s
 	return(0);
 }
