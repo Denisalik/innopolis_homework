@@ -1,0 +1,5 @@
+we need 13 bits for coding 8KB page(offsets is from 0 to 8191)
+16-13=3 bits. If we consider no additional bits(such as modified, referenced e.t.c.) are added to the we need 2^3=8 entries in the linear page table.
+If we have 1 addittional bits then 16-13-1=2 bits we have and 2^2=4 entries in the linear page table.
+Same with 2 additional bits->2^1=2 entries
+Same with 3 additional bits, but in this case we have only one entry instead of table.
