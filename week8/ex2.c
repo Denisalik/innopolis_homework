@@ -18,6 +18,6 @@ int main(){
 		//VIRT and RES are increasing as time goes
 		//SHR ~ 1024
 		//%MEM is increasing too
-		//%CPU doesn't have a pattern(sometimes it is 1-0, another time is 5-3, or 0-7
+		//%CPU doesn't have a pattern(sometimes it is 1-0, another time is 5-3, or 0-7)
 	}
 }
