@@ -1,2 +1,0 @@
-1 2 ... n 1 1 1 1 1 1 1 1 1 1... or other numbers from first n numbers, if frame page number is n or more.
-Behaviour of hit/miss is increasing, because we always reference page that is already in memory, so number of hits will increase, while number of misses will stay unchanged(n).
