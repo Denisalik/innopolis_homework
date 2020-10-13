@@ -1,0 +1,2 @@
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ... infinity or other number that is not used, and not be used in near future.
+Behaviour of hit/miss is decreasing, because we always reference page that is not in memory, so number of misses will increase, while number of hits will stay unchanged.
