@@ -55,12 +55,12 @@ int main(){
 	increment(a,memory,n,&hit,&miss);
 	if(count%c==0)update_age(memory,n);
 	count++;
-    while(!feof(fp)){
-    	fscanf(fp,"%d",&a);
-        increment(a,memory,n,&hit,&miss);
-        if(count%c==0)update_age(memory,n);
-        count++;
-        //last symbol of file should be integer or last symbol will get read many times insted of 1
+    	while(!feof(fp)){
+    		fscanf(fp,"%d",&a);
+        	increment(a,memory,n,&hit,&miss);
+        	if(count%c==0)update_age(memory,n);
+        	count++;
+        	//last symbol of file should be integer or last symbol will get read many times insted of 1
     }
     double ratio = (double)hit/(double)miss;
     printf("hits:%d misses:%d hit/miss ratio:%lf",hit,miss,ratio);
