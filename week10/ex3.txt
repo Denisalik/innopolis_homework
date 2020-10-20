@@ -1,0 +1,17 @@
+~/week10$ chmod a=rw- _ex3.txt
+remove execute permission for everybody
+-rw-rw-rw- 1 denis denis 0 окт 20 15:01 _ex3.txt
+
+~/week10$ chmod u=rwx _ex3.txt
+~/week10$ chmod o=rwx _ex3.txt
+grant all permissions to owner, other
+rwxrw-rwx 1 denis denis 0 окт 20 15:01 _ex3.txt
+
+~/week10$ chmod g=rwx _ex3.txt
+make group permissions equal to user permissions
+-rwxrwxrwx 1 denis denis 0 окт 20 15:01 _ex3.txt
+
+every number of 660 means 3 bits of permission for owner, group, other: read, write, execute.
+660 means that owner has permission of read, write, but not execute, group has permission of read, write, but not execute, other hasn't any permission at all.
+775 means that owner has permission of read, write, execute, group has permission of read, write, execute, other has permission of read, execute, but not to write.
+777 means that owner has permission of read, write, execute, group has permission of read, write, execute, other has permission of read, execute, write. So everyone has permisson for everything.

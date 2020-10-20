@@ -1,0 +1,19 @@
+/*
+~/week10$cd ../week1
+go to week1 directory
+~/week10$touch file.txt
+create file.txt
+~/week10$cd ../week10
+go back go week10
+~/week10$ link ../week1/file.txt _ex2.txt
+create file _ex2.txt that is linked to file.txt from another directory
+~/week10$ find ../ -inum 526127
+526127 is inodenumber of file
+/*
+../week1/file.txt
+../week10/_ex2.txt
+/*
+~/week10$ find ../ -inum 526127 -exec rm {} \;
+~/week10$ find ../ -inum 526127
+no output
+*/
