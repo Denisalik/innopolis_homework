@@ -1,0 +1,5 @@
+File is:link1
+It's inode:404090
+All links to file:
+./tmp/link1
+./tmp/file1
