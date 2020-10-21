@@ -1,6 +1,0 @@
-File is:file1
-It's inode:400765
-All links to file:
-./tmp/file1
-./link1
-
