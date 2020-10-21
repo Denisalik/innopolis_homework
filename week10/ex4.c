@@ -17,12 +17,12 @@ void listfiles(char* name, struct visited* vis){
 	while ((dp = readdir(dirp))!=NULL) {
 		if(strcmp(dp->d_name, ".") == 0 || strcmp(dp->d_name, "..") == 0)continue;
 		if(dp->d_type == DT_DIR){
-			char path[1024];
+			char path[200];
 			strcpy(path, name);
 			strcat(path, dp->d_name);
-			strcat(path,"/");
-			listfiles(name,vis);
-
+			strcat(path, "/");
+			listfiles(path, vis);
+			continue;
 		}
 		else {
 			char* c = malloc(strlen(name) + strlen(dp->d_name) + 1);
