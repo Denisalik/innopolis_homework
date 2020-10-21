@@ -23,8 +23,9 @@ int main(){
 				char* inode= malloc(100);
 				//inode is string version of buff.st_ino
 				sprintf(inode, "%d", buff.st_ino);
-				char* arguments[5] = {"find", "./", "-inum", inode, NULL};
+				char* arguments[5] = {"find", "./tmp/", "-inum", inode, NULL};
 				//we can use find command because we know inode of the file
+				//mount point is tmp folder
 				execvp(arguments[0], arguments);
 				//find all files that are linked to file with more than 0 links to it
 				printf("\n");
