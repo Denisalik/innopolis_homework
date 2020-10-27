@@ -1,0 +1,6 @@
+In 1st program output:
+"Hello\nHello\n"
+In 2nd program output:
+"Hello\n\n\n"
+Difference of output is because after "\n" stdout is flushed, it means 2nd program output "Hello\n", then forked(buffer is empty in both processes) and output "\n" 2 times(parent and child process output one "\n").
+First program print "Hello" and fork, "Hello" still in buffer and both processes have "Hello" in buffer, then after "\n" buffer is flushed on both processes and both processes output "Hello\n".
