@@ -1,0 +1,34 @@
+Buffer_size is reversely proportinal to time
+Obviously, more weight of the file more time you need to wait.
+With O_SYNC it requires much more time, because without O_SYNC program uses DMA, but with O_SYNC program data goes to cache.
+
+Without O_SYNC:
+
+buffer size is 20 bytes:
+real	0m0,750s
+user	0m0,043s
+sys	0m0,673s
+
+buffer size is 100 bytes:
+real	0m0,184s
+user	0m0,009s
+sys	0m0,156s
+
+buffer size is 10 bytes:
+real	0m1,461s
+user	0m0,083s
+sys	0m1,340s
+
+with O_SYNC:
+
+buffer size is 1000 bytes:
+real	0m21,235s
+user	0m0,000s
+sys	0m1,452s
+
+buffer size is 500 bytes:
+real	1m0,578s
+user	0m0,024s
+sys	0m2,504s
+
+I tried 100 bytes, but it takes 4m without input, so I canceled command.
