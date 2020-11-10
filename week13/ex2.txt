@@ -1,3 +1,4 @@
 When we use prevention, we impose constraints on resourse allocation, so because of that processes cannot work concurently and because of that parallelism is impossible, which slow down system.
 When we use avoidance, scheduler make resource allocation and it may be slow. Also we need to know what resources we need in advance, so in most cases it is even impossible to know.
 When we use recovery, when we detect deadlock we need abort processes and this is a problem. If system based on atomic transactions we need to abort some of them, and after process is done working we need to restart these transactions, which may be very slow(for example we start n transactions, then we abort n-1 transactions on the middle of completion of them to succed one of transactions, then we do the same for n-1 transactions e.t.c)
+Because of these constraints and weaknesses we may choose one strategy over the other.
