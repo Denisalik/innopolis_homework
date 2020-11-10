@@ -32,13 +32,11 @@ int main(){
 		j++;
 	} while(1);
 	int n = j+1;
-	
 	for(i = 0; i < n; i++){
 		for(j = 0; j < m; j++){
 			fscanf(fp, "%d", &r[i][j]);
 		}
 	}
-	
 	int proc[100];
 	for(i = 0; i < n;i++){
 		proc[i] = 0;
@@ -65,5 +63,4 @@ int main(){
 	if(n - sum != 0)printf("%s%d", "number of processes that are deadlocked:", n - sum);
 	else printf("no deadlock is detected");
 	fclose(fp);
-	
 }
